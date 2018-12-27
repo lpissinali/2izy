@@ -1,0 +1,443 @@
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  color: $color-base;
+}
+
+.text-lg {
+  font-size: $font-size-base * 1.2;
+}
+
+h1 {
+  font-size: 2.188rem;
+  font-weight: $font-weight-base;
+  color: $brand-secondary;
+  margin: 0 0 30px;
+}
+
+h2 {
+  font-size: 2.813rem;
+  font-weight: $font-weight-base;
+  margin: 0 0 20px;
+  color: #202020;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: $brand-secondary;
+  margin: 0 0 20px;
+
+  span {
+    font-weight: 300;
+    color: $color-base;
+    font-size: 1rem;
+  }
+
+  i {
+    font-size: 2.5rem;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.btn {
+  border: none;
+  border-radius: 40px;
+  padding: 10px 30px;
+  font-size: 1.063rem;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &.btn-sm {
+    font-size: 0.875rem;
+    padding: 8px 25px;
+  }
+
+  &.btn-primary {
+    background: $brand-primary;
+  }
+
+  &.btn-white {
+    background: #fff;
+    color: $brand-primary;
+    border: solid 1px $brand-primary;
+  }
+
+  &.btn-create {
+    background: #6A7A8D;
+  }
+
+  &.btn-facebook {
+    background: #3B5998;
+
+    i {
+      color: #fff;
+      margin-left: 10px;
+    }
+  }
+
+  &.btn-twitter {
+    background: #55ACEE;
+
+    i {
+      color: #fff;
+      margin-left: 10px;
+    }
+  }
+
+  &.btn-sum {
+    background: #fff;
+    padding: 0 10px;
+    color: $brand-primary;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+    border: solid 1px $border-color;
+  }
+
+  &.btn-append {
+    background: none;
+    border-radius: 0 6px 6px 0;
+    border: solid 1px $border-color;
+    border-left: none;
+    color: $brand-primary;
+    padding: 0 20px;
+    font-size: 20px;
+
+    i {
+      vertical-align: middle;
+    }
+  }
+
+  &.btn-add {
+    border: solid 1px $brand-primary;
+    color: $brand-primary;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    padding: 5px 15px;
+  }
+}
+
+
+.modal-body {
+  padding: 2rem 2rem 1rem;
+}
+
+.modal-footer {
+  border: none;
+  padding: 1rem 2rem 2rem;
+}
+
+.accordion {
+  border: solid 1px $border-color;
+  box-shadow: 0 0 5px #ccc;
+  margin-bottom: 40px;
+
+  .title {
+    padding: 20px 30px;
+    color: $brand-primary;
+    font-size: 1.25rem;
+  }
+
+  .question {
+    display: block;
+    border-top: solid 1px $border-color;
+    padding: 20px 20px 20px 45px;
+    position: relative;
+    font-weight: 400;
+    color: $color-base;
+
+    &:before {
+      position: absolute;
+      content: '-';
+      border: solid 1px $brand-primary;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: block;
+      text-align: center;
+      line-height: 18px;
+      left: 15px;
+      top: 20px;
+      color: $brand-primary;
+    }
+
+    &.collapsed {
+      &:before {
+        content: '+';
+      }
+    }
+  }
+
+  .answer {
+    padding: 0 20px 20px 45px;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?ce6zg0');
+  src: url('../fonts/icomoon.eot?ce6zg0#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?ce6zg0') format('truetype'),
+  url('../fonts/icomoon.woff?ce6zg0') format('woff'),
+  url('../fonts/icomoon.svg?ce6zg0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: $brand-primary;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-off {
+  color: $icon-color-off;
+}
+
+.icon-menu:before {
+  content: "\e923";
+}
+
+.icon-chevron-left, .icon-chevron-right {
+  border-right: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-left: 5px solid $brand-primary;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+}
+
+.icon-chevron-left {
+  border-left: 5px solid transparent;
+  border-right: 5px solid $brand-primary;
+}
+
+.icon-question {
+  width: 18px;
+  height: 18px;
+  font-weight: 400;
+  border-radius: 50%;
+  font-family: $font-family-base;
+  background: $brand-primary;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-style: normal;
+
+  &:before {
+    position: absolute;
+    content: '?';
+    line-height: 18px;
+    width: 18px;
+    left: 0;
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.icon-phone:before {
+  content: "\e91f";
+}
+
+.icon-pin:before {
+  content: "\e920";
+}
+
+.icon-contact:before {
+  content: "\e921";
+}
+
+.icon-note:before {
+  content: "\e922";
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-credit-card:before {
+  content: "\f09d";
+}
+
+.icon-check .path1:before {
+  content: "\e900";
+  color: rgb(106, 194, 89);
+}
+
+.icon-check .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-cancel .path1:before {
+  content: "\e902";
+  color: rgb(237, 9, 9);
+}
+
+.icon-cancel .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-list:before {
+  content: "\e904";
+}
+
+.icon-cart:before {
+  content: "\e905";
+}
+
+.icon-heart:before {
+  content: "\e907";
+}
+
+.icon-facebook:before {
+  content: "\e908";
+}
+
+.icon-cards:before {
+  content: "\e909";
+}
+
+.icon-fridge:before {
+  content: "\e90a";
+}
+
+.icon-chair:before {
+  content: "\e90b";
+}
+
+.icon-bathroom:before {
+  content: "\e90c";
+}
+
+.icon-kitchen:before {
+  content: "\e90d";
+}
+
+.icon-window:before {
+  content: "\e90e";
+}
+
+.icon-chandelier:before {
+  content: "\e90f";
+}
+
+.icon-floor:before {
+  content: "\e910";
+}
+
+.icon-construction:before {
+  content: "\e911";
+}
+
+.icon-location:before {
+  content: "\e912";
+}
+
+.icon-furniture:before {
+  content: "\e913";
+}
+
+.icon-laundry:before {
+  content: "\e914";
+}
+
+.icon-iron:before {
+  content: "\e915";
+}
+
+.icon-faq:before {
+  content: "\e916";
+}
+
+.icon-dust:before {
+  content: "\e917";
+}
+
+.icon-cog:before {
+  content: "\e918";
+}
+
+.icon-calendar:before {
+  content: "\e919";
+}
+
+.icon-lock:before {
+  content: "\e91a";
+}
+
+.icon-chronometer:before {
+  content: "\e91b";
+}
+
+.icon-product:before {
+  content: "\e91c";
+}
+
+.icon-trash:before {
+  content: "\e91d";
+}
+
+.icon-money:before {
+  content: "\e91e";
+}
+
+.icon-search:before {
+  content: "\e906";
+}
+
+
+.sub-text {
+  margin-bottom: 40px;
+  padding-left: 50px;
+}
+
+
+@media (min-width: 1400px) {
+  .container-large {
+    max-width: 1340px;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: $font-size-base - 1px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: $font-size-base - 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+  }
+}

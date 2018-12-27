@@ -1,0 +1,172 @@
+header {
+  background: url(../img/banner.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+
+  .container {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+  }
+
+  .navbar {
+    padding: 40px 15px 0;
+    margin: 0 -15px;
+
+    &.nav-open {
+      background: #fff;
+    }
+
+    .navbar-brand {
+      img {
+        width: 70px;
+        border-radius: 6px;
+      }
+    }
+
+    .icon-menu {
+      font-size: 30px;
+    }
+
+    .nav-item {
+      padding: 0 15px;
+
+      .nav-link {
+        color: $color-base;
+        font-weight: 600;
+
+        &.nav-link-badge {
+          background: $brand-primary;
+          color: #fff;
+          font-weight: normal;
+          padding: 3px 15px;
+          margin: 0.5rem 0;
+        }
+      }
+
+      &.dropdown {
+        background: $bkg-color;
+        border-radius: 6px;
+        margin-top: -22px;
+        top: 11px;
+        margin-left: 15px;
+        padding: 0 5px;
+
+        .nav-link {
+          color: #949494;
+          font-weight: 400;
+
+          img {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+        }
+
+        .dropdown-menu {
+          position: absolute;
+        }
+
+        .dropdown-toggle {
+          &:after {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &.inner {
+    background: none;
+    min-height: 1px;
+    padding-bottom: 0;
+
+    .navbar {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.header-moto {
+  background: url(../img/moto-bkg.png) no-repeat center;
+  background-size: 120%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .header-moto__text {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+
+
+  @media (min-width: 400px) {
+    background-size: 100%;
+  }
+
+  @media (min-width: 480px) {
+    width: 450px;
+    height: 330px;
+  }
+
+
+  @media (min-width: 768px) {
+    width: 600px;
+    height: 430px;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    left: inherit;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    .navbar {
+      margin-bottom: 150px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    .container {
+      max-width: 100%;
+    }
+
+    .navbar {
+      .navbar-collapse {
+        background: #fff;
+        z-index: 10;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+    }
+
+    &.inner {
+      .navbar {
+        background: #fff;
+      }
+    }
+  }
+}
+

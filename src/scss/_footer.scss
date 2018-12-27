@@ -1,0 +1,74 @@
+footer {
+  background: $brand-secondary;
+  color: $brand-tertiary;
+  font-weight: 300;
+  padding: 30px 0;
+
+  ul {
+    margin: 0 0 10px;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin-bottom: 10px;
+
+      &.text {
+        color: #fff;
+      }
+
+      a {
+        color: $brand-tertiary;
+
+        &:hover {
+          color: $brand-tertiary;
+        }
+      }
+    }
+  }
+
+  .social {
+    > a {
+      margin-right: 10px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .form-control {
+    color: $brand-tertiary;
+    background: #1D60B8;
+    border-color: #5186CA;
+
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color: $brand-tertiary;
+    }
+
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: $brand-tertiary;
+      opacity: 1;
+    }
+
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: $brand-tertiary;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $brand-tertiary;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: $brand-tertiary;
+    }
+
+    &::placeholder { /* Most modern browsers support this now. */
+      color: $brand-tertiary;
+    }
+  }
+
+}
