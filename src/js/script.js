@@ -4,14 +4,8 @@ $(document).ready(function () {
 
     carrousel();
 
-    $(".js-select-links").click(function () {
-        var open = $(this).data("isopen");
-        if (open) {
-            window.location.href = $(this).val()
-        }
-        //set isopen to opposite so next time when use clicked select box
-        //it wont trigger this event
-        $(this).data("isopen", !open);
+    $(".js-select-links").on('click', function () {
+        $(this).toggleClass('active');
     });
 
 
@@ -45,7 +39,9 @@ $(window).on('resize orientationchange', function () {
         $('.js-testimonials').slick('resize');
     }
 
-    
+    if ($(window).width() < 991) {
+        $('.navbar').removeClass('nav-open');
+    }
 });
 
 //slick carrousel

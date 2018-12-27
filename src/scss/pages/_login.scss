@@ -3,6 +3,10 @@ header {
     background: url(../img/banner2.jpg) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+
+    .container {
+      min-height: 800px;
+    }
   }
 
 }
@@ -11,13 +15,13 @@ header {
   background: url(../img/login-bkg.png) no-repeat;
   width: 982px;
   height: 637px;
+  padding: 92px 103px 134px 22px;
+  margin: auto;
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
-  padding: 92px 103px 134px 22px;
-  margin: 100px auto 0;
+  bottom: 0;
+  left: 0;
 
   .left-col {
     border-right: solid 1px $border-color;

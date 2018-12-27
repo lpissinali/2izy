@@ -14,15 +14,12 @@
         <nav class="navbar navbar-expand-lg">
             <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="2izy"/></a>
             <ul class="navbar-nav ml-auto flex-row">
-                <li class="nav-item">
-                    <a class="nav-link nav-link-badge" href="book.html">Agende uma limpeza</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <img src="img/avatar3.jpg" alt=""/>
-                        Fabiana Nogueira
+                        <span class="user">Fabiana Nogueira</span>
                     </a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="archive.html">Histórico de pedidos</a>
                         <a class="dropdown-item" href="user-profile.html">Meus dados</a>
                         <a class="dropdown-item" href="billing.html">Formas de pagamento</a>
@@ -38,19 +35,21 @@
 <div class="container">
     <div class="row no-gutters mt-5">
         <div class="col-md-auto">
-            <div class="user-menu">
-                <div class="d-none d-md-block">
+            <div class="d-block d-lg-none d-xl-none d-md-none">
+                <a class="btn btn-primary btn-block mb-4" href="book.html">Agende uma limpeza</a>
+            </div>
+
+            <div class="user-menu js-select-links">
+                <div class="user-menu__field">
+                    Histórico de pedidos
+                </div>
+
+                <div class="user-menu__dropdown">
                     <a href="archive.html" class="item active"><span>Histórico de pedidos</span></a>
                     <a href="user-profile.html" class="item"><span>Meus dados</span></a>
                     <a href="billing.html" class="item"><span>Forma de pagamento</span></a>
                     <a href="change-password.html" class="item"><span>Senha</span></a>
                 </div>
-                <select class="form-control js-select-links d-block d-lg-none d-xl-none d-md-none">
-                    <option value="archive.html" selected>Histórico de pedidos</option>
-                    <option value="user-profile.html">Meus dados</option>
-                    <option value="billing.html">Forma de pagamento</option>
-                    <option value="change-password.html">Senha</option>
-                </select>
             </div>
         </div>
         <div class="col">
